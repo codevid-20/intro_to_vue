@@ -8,11 +8,14 @@
 <body>
   <div id="app">
     {{ message }}
-    <div>1st number: <input type="text"></div>
-    <div>2nd number: <input type="text"></div>
-    <div>3rd number: <input type="text"></div>
-    <div><button>Compute sum</button></div>
-    <p>The sum is: </p>
+    <div>1st number: <input v-model="number1" type="text"></div>
+    <div>2nd number: <input v-model="number2" type="text"></div>
+    <div>3rd number: <input v-model="number3" type="text"></div>
+    <div><button v-on:click="computeSum()">Compute sum</button></div>
+    <p>The sum is: {{ sum }}</p>
+
+
+    <button v-on:click="secondButton()">Second button</button>
   </div>
 </body>
 </html>
