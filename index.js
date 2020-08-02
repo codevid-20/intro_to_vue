@@ -14,11 +14,12 @@ var app = new Vue({
     },
     toggleInfo: function() {
       console.log('toggling info...');
-      if (this.showInfo === true) {
-        this.showInfo = false;
-      } else {
-        this.showInfo = true;
-      }
+      // if (this.showInfo === true) {
+      //   this.showInfo = false;
+      // } else {
+      //   this.showInfo = true;
+      // }
+      this.showInfo = !this.showInfo;
     }
   }
 });
