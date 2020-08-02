@@ -10,6 +10,8 @@
   <h1>Hello from HTML!</h1>
   <div id="app">
     <p>{{ greeting }}</p>
+
+    <p>{{ fruits }}</p>
     
     <p>{{ name }}</p>
     
@@ -19,6 +21,11 @@
 
     <button v-on:click="toggleInfo()">Toggle Info</button>
     <p v-if="showInfo">Additional hidden information</p>
+
+    <!-- fruits.each do |fruit| -->
+    <div v-for="fruit in fruits">
+      A good fruit is: {{ fruit }}
+    </div>
     
   </div>
 </body>

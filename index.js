@@ -5,7 +5,8 @@ var app = new Vue({
   data: {
     greeting: "Hello from Buffalo!",
     name: "Jessica",
-    showInfo: false
+    showInfo: false,
+    fruits: ["pineapple", "mango", "cherry"]
   },
   methods: {
     changeGreeting: function() {
