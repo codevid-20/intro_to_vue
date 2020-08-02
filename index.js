@@ -9,7 +9,6 @@ var app = new Vue({
   methods: {
     changeGreeting: function() {
       console.log('changing greeting...');
-      console.log(this.$data);
       this.greeting = "goodbye from toronto";
     }
   }
