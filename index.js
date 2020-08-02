@@ -6,7 +6,8 @@ var app = new Vue({
     greeting: "Hello from Buffalo!",
     name: "Jessica",
     showInfo: false,
-    fruits: ["pineapple", "mango", "cherry"]
+    fruits: ["pineapple", "mango", "cherry"],
+    newFruit: "add new fruit here"
   },
   methods: {
     changeGreeting: function() {
@@ -21,6 +22,13 @@ var app = new Vue({
       //   this.showInfo = true;
       // }
       this.showInfo = !this.showInfo;
+    },
+    addFruit: function() {
+      console.log('adding fruit...');
+      // get the user input 
+      console.log(this.newFruit)
+      // add that user input to the array
+      this.fruits.push(this.newFruit);
     }
   }
 });
