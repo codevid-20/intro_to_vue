@@ -13,7 +13,7 @@ var app = new Vue({
       console.log(this.number1, this.number2, this.number3);
       console.log(typeof parseInt(this.number1));
       console.log(parseInt(this.number1) + parseInt(this.number2) + parseInt(this.number3));
-      this.sum = parseInt(this.number1) + parseInt(this.number2) + parseInt(this.number3);
+      this.sum = this.number1 + this.number2 + this.number3;
     },
     secondButton: function() {
       console.log('here is the second button');

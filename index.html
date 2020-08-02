@@ -17,6 +17,9 @@
 
     <p>Enter your name: <input type="text" v-model="name"></p>
 
+    <button v-on:click="toggleInfo()">Toggle Info</button>
+    <p v-if="showInfo">Additional hidden information</p>
+    
   </div>
 </body>
 </html>
