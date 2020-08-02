@@ -3,10 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <title>Practice Vue.js</title>
-  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="index.js" defer></script>
 </head>
 <body>
   <h1>Hello from HTML!</h1>
+  <div id="app">
+    <p>{{ greeting }}</p>
+    <p>{{ greeting }}</p>
+    <p>{{ greeting }}</p>
+    <p>{{ greeting }}</p>
+    <p>{{ name }}</p>
+    
+    <button v-on:click="changeGreeting()">Click me!</button>
+  </div>
 </body>
 </html>
 
